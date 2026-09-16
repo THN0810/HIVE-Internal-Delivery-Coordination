@@ -150,11 +150,11 @@ The prototype is built on C# Windows Forms, simulating the database interactions
 ## Local Test Accounts (Role Simulation):
 | Username | Password | Enforced Role | BA Validation Goal |
 | :--- | :--- | :--- | :--- |
-| `admin123` | `(hidden)` | System Administrator | Verify account creation, role assignments, and audit trail logs. |
-| `dieuphoivien123` | `(hidden)` | Dispatcher | Test order placement, real-time vehicle mapping, and dispatch. |
-| `taixe123` | `(hidden)` | Driver | Test task reception interface, status updates, and incident reporting. |
-| `ketoan123` | `(hidden)` | Accountant | Test financial accounting, invoice calculations, and PDF generation. |
-| `quanly123` | `(hidden)` | General Manager | Test decision support through dynamic dashboard charts and logs. |
+| `admin` | `123` | System Administrator | Verify account creation, role assignments, and audit trail logs. |
+| `dieuphoivien` | `123` | Dispatcher | Test order placement, real-time vehicle mapping, and dispatch. |
+| `taixe` | `123` | Driver | Test task reception interface, status updates, and incident reporting. |
+| `ketoan` | `123` | Accountant | Test financial accounting, invoice calculations, and PDF generation. |
+| `quanly` | `123` | General Manager | Test decision support through dynamic dashboard charts and logs. |
 ---
 ## Key Learning Outcomes as a BA Intern
 - By executing this academic project, I have gained hands-on experience in:
