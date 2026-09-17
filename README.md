@@ -105,7 +105,7 @@ The proposed TO-BE process digitizes the transport lifecycle into a centralized 
 4. **Financial Settlement:** Accountant logs payment receipts (`PTTxxx`) and issues VAT invoices (`HDxxx`) automatically calculated from line items.
 5. **Reporting:** Manager accesses operational summary reports and revenue analytics.
 
-\--Image of: --02-bpmn-tobe-workflow *Figure 1: TO-BE Delivery Coordination Process Model (BPMN 2.0).*
+![BPMN ToBe Optimized Workflow](BPMN_ToBe_Optimized_Workflow.png)
 
 ---
 
