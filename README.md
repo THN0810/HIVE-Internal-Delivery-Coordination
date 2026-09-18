@@ -1,335 +1,163 @@
-# HIVE Logistics Management System
-
-## Academic Business Analysis &amp; System Design Project
-
-&gt; **Academic Institution:** University of Finance - Marketing (UFM), Ho Chi Minh City  
-&gt; **Faculty:** Faculty of Data Science | **Department:** Management Information Systems (MIS)  
-&gt; **Course:** Professional Practice Report (Thực hành nghề nghiệp)  
-&gt; **Author:** Trịnh Hoàng Ngân  
-&gt; **Advisor:** M.Sc. Lâm Hoàng Trúc Mai  
-&gt; **Target Enterprise:** HIVE Transportation Services Trading Co., Ltd.  
-&gt; **Tools &amp; Tech Stack:** Business Analysis (BABOK, BPMN 2.0, DFD, UML), SQL Server 2022 (T-SQL, Triggers, RBAC), C# .NET Windows Forms, Visual Studio 2022, PowerDesigner, Draw.io.
-
+HIVE Logistics Management System
+Academic Business Analysis & System Design Case Study
+> **Academic Institution:** University of Finance - Marketing (UFM), Ho Chi Minh City  
+> **Faculty:** Faculty of Data Science | **Department:** Management Information Systems (MIS)  
+> **Course:** Professional Practice Report (Thực hành nghề nghiệp)  
+> **Author:** Trịnh Hoàng Ngân  
+> **Advisor:** M.Sc. Lâm Hoàng Trúc Mai  
+> **Target Enterprise:** HIVE Transportation Services Trading Co., Ltd.  
+> **Tools & Methodology:** Business Analysis (BABOK, BPMN 2.0, DFD, UML), SQL Server 2022 (T-SQL, Triggers, RBAC), C# .NET Windows Forms, PowerDesigner, Draw.io.
 ---
-
-## 1\. Project Overview
-
-### Business Context
-
-**HIVE Transportation Services Trading Co., Ltd.** is an internal logistics and transport coordination firm providing freight delivery across urban and inter-provincial routes. As order volume grew, the company experienced operational challenges due to fragmented, manual record-keeping—relying on paper notes, disconnected Excel spreadsheets, phone calls, and Zalo messaging groups.
-
-These manual practices made it difficult to:
-
-* Consistently track transport orders across their lifecycle.
-* Verify real-time driver and vehicle availability during dispatching.
-* Coordinate transport assignments without risk of scheduling conflicts.
-* Receive timely delivery status updates from drivers.
-* Reconcile payment receipts and issue VAT invoices accurately.
-* Consolidate operational performance and revenue reports for management.
-
-### Proposed Solution
-
-This academic project analyzes and designs a centralized logistics coordination system to digitize and streamline HIVE's core operational activities:
-
-* **Delivery Order Management:** Centralized order intake, automated tracking code generation, and lifecycle history.
-* **Dispatch Management:** Resource matching (drivers and vehicles) with automated scheduling constraint validation.
-* **Transport Resource Management:** Centralized management of driver profiles, licenses, vehicle fleets, and availability statuses.
-* **Freight Payment &amp; Invoicing:** Payment receipt logging, fee itemization, and automated VAT invoice calculation.
-* **Reporting &amp; Analytics:** Operational status monitoring and revenue report generation.
-* **User Account &amp; Permission Management:** Role-Based Access Control (RBAC) ensuring data security across internal roles.
-
+1. Project Overview
+Business Context
+HIVE Transportation Services Trading Co., Ltd. is an internal logistics and transport coordination firm providing freight delivery across urban and inter-provincial routes. As order volume grew, the company experienced operational challenges due to fragmented, manual record-keeping—relying on paper notes, disconnected Excel spreadsheets, phone calls, and Zalo messaging groups.
+- **Key Pain Points (Operational Bottlenecks)**
+To address several key drivers of operational inefficiency, the business analysis identified five core pain points:
+Fragmented Data & Record-Keeping: Operational records (customers, vehicles, drivers, orders, invoices) were scattered across disconnected Excel files, paper notes, and unorganized Zalo chat groups.
+Scheduling Conflicts & Double-Booking Risk: Dispatchers manually verified driver and vehicle availability via phone calls, leading to frequent double-booking of drivers and trucks.
+Information Lag in Delivery Execution: Drivers lacked a central platform to log trip progress in real-time, relying on phone calls/texts that delayed milestone visibility for dispatchers and management.
+Manual Financial Reconciliation: Accountants manually cross-referenced delivery slips with bank statements to record payments and calculate VAT invoices, increasing human error and reconciliation delays.
+Absence of Centralized Reporting: Executive management lacked consolidated operational reports to track daily/monthly revenue trends, fleet utilization, and driver performance.
+Proposed Solution
+This academic case study delivers a comprehensive, end-to-end Business Analysis & System Design Blueprint designed to digitize HIVE's transport coordination workflows:
+Requirements Engineering & Process Modeling: Re-engineering manual operations into a streamlined TO-BE digital process using BABOK-aligned requirements elicitation, process modeling (BPMN 2.0, 2-level DFD, BFD), and UML Use Case specifications (56 Use Cases).
+Database Engineering & Business Rule Enforcement: Implementing a structured relational database (`QuanLyDieuPhoiVanChuyen_HIVE`) with automated T-SQL triggers to enforce business constraints and Role-Based Access Control (RBAC).
+Application Validation: Developing a functional C# WinForms desktop application connected to SQL Server to validate end-to-end operational workflows and Use Cases across 5 user roles.
+![High-level System Architecture](./docs/images/01-hive-system-architecture.png)
+> 📸 **Image Placeholder 01:** *Chèn hình ảnh Sơ đồ Kiến trúc Hệ thống Điều phối Vận tải HIVE (System Architecture Diagram).*
 ---
-
-## 2\. My Contribution
-
-To address the operational challenges at HIVE, I conducted an end-to-end system analysis and design project covering three primary domains:
-
-```
-+-----------------------------------------------------------------------------------+
-|                                  MY CONTRIBUTION                                  |
-+------------------------------------+----------------------------------------------+
-| 1. Business Analysis (BA)          | • Elicited 25 Functional &amp; 18 Non-Functional |
-|                                    |   Requirements across 5 business modules.    |
-|                                    | • Modeled AS-IS &amp; TO-BE processes using      |
-|                                    |   BPMN 2.0, BFD, 3-level DFD, &amp; UML (56 UCs).|
-+------------------------------------+----------------------------------------------+
-| 2. Database Engineering           | • Designed a 3NF relational schema with      |
-|    (SQL Server)                    |   21 physical tables.                        |
-|                                    | • Implemented T-SQL triggers for double-     |
-|                                    |   booking prevention and VAT calculation.    |
-|                                    | • Configured RBAC across 5 roles &amp; 67 rules. |
-+------------------------------------+----------------------------------------------+
-| 3. Application Development         | • Developed a C# WinForms desktop prototype  |
-|    (C# .NET &amp; ADO.NET)             |   connected to SQL Server.                   |
-|                                    | • Built 5 role-based UI interfaces to        |
-|                                    |   validate end-to-end workflows.            |
-+------------------------------------+----------------------------------------------+
-
-```
-
-### Key Deliverables:
-
-1. **Business Analysis:**
-
-  * Surveyed AS-IS workflows and formulated the digital TO-BE process architecture.
-  * Documented **25 Functional Requirements (FRs)** and **18 Non-Functional Requirements (NFRs)**.
-  * Constructed system process models: Business Function Diagram (BFD), 3-level Data Flow Diagrams (Context, Level 0, Level 1), BPMN 2.0 process models, and an overall UML Use Case model containing **56 Use Cases** across 5 user roles.
-2. **Database Design &amp; Implementation:**
-
-  * Designed a normalized relational database schema (`QuanLyDieuPhoiVanChuyen_HIVE`) comprising **21 physical tables** in 3rd Normal Form (3NF) across 5 functional domains.
-  * Programmed automated T-SQL triggers to enforce business constraints, including preventing driver and vehicle double-booking during active time slots, and recalculating invoice pre-tax and VAT totals.
-  * Established a Role-Based Access Control (RBAC) security structure defining **67 permissions** across 5 system roles, supporting both role-level and account-level overrides.
-3. **Application Development:**
-
-  * Built a C# Windows Forms desktop application prototype connected to SQL Server using ADO.NET data access layers.
-  * Implemented **5 role-specific user interfaces** (*Dispatcher, Driver, Accountant, Manager, Admin*) to simulate and validate the end-to-end delivery coordination lifecycle.
-
+2. My Contribution
+Core Domain	Key Contributions & Delivered Artifacts
+1. Requirements Engineering & Process Modeling	• Elicited 25 Functional & 18 Non-Functional Requirements across 5 business modules.<br>• Modeled AS-IS & TO-BE workflows using BPMN 2.0, BFD, 2-level DFD (Context Level & Level 0), & UML (56 Use Cases).<br>• Defined formal business rules and integrity constraints for schedule conflict prevention.
+2. Database Engineering & Business Rule Enforcement	• Designed a structured relational schema with 20 physical tables in SQL Server.<br>• Translated core business rules into automated T-SQL Triggers (driver/vehicle double-booking prevention & VAT calculation).<br>• Configured granular RBAC across 5 system roles and 67 permission rules.
+3. Application Development & Workflow Validation	• Developed a functional C# WinForms desktop application connected to SQL Server.<br>• Built 5 role-based UI interfaces specifically to validate the correctness of analyzed business workflows and Use Cases.
 ---
-
-## 3\. Business Analysis &amp; System Modeling
-
-### 3.1 TO-BE Process Architecture
-
-The proposed TO-BE process digitizes the transport lifecycle into a centralized workflow connecting 5 internal roles:
-
-```
-[Customer Request] ──&gt; (Dispatcher) ──&gt; [Create Order &amp; Validate] ──&gt; [Assign Driver &amp; Vehicle]
-                                                                            │
-[Management BI] &lt;── [Accounting Invoicing] &lt;── [Driver Delivery] &lt;──────────┘
-
-```
-
-1. **Order Intake:** Dispatcher records order details; the system assigns a unique tracking code (`DVCxxx`).
-2. **Dispatch &amp; Allocation:** Dispatcher matches available drivers and vehicles (`LDPxxx`); T-SQL triggers prevent double-booking.
-3. **Trip Execution:** Driver views assigned trips in their workspace ("Nhiệm vụ của tôi"), updates delivery milestones, and logs transit incidents.
-4. **Financial Settlement:** Accountant logs payment receipts (`PTTxxx`) and issues VAT invoices (`HDxxx`) automatically calculated from line items.
-5. **Reporting:** Manager accesses operational summary reports and revenue analytics.
-
-![BPMN ToBe Optimized Workflow](Business_Analysis/BPMN_TOBE/BPMN_ToBe_Optimized_Workflow.png)
-
+3. Business Analysis & System Modeling
+3.1 TO-BE Business Architecture & Workflow
+The TO-BE Process digitizes the core delivery lifecycle into a streamlined workflow connecting 5 internal operational roles:
+Step	Workflow Stage	Responsible Role	Key Operations & System Outputs
+1	Order Intake & Validation	Dispatcher (Điều phối)	Inputs order details; system validates addresses/cargo and generates a unique tracking ID (`DVCxxx`).
+2	Resource Dispatching	Dispatcher (Điều phối)	Filters available drivers & vehicles; system checks for schedule conflicts via T-SQL triggers before issuing dispatch orders (`LDPxxx`).
+3	Delivery Execution	Driver (Tài xế)	Receives trip assignment via "My Tasks" UI, accepts/rejects, logs real-time milestone timestamps, and records transit incidents.
+4	Financial Settlement	Accountant (Kế toán)	Records payment receipts (`PTTxxx`), validates bank transaction codes, and generates VAT invoices (`HDxxx`).
+5	Executive Oversight	Manager (Quản lý)	Monitors real-time management dashboard for revenue trends, order completion rates, and fleet utilization.
+![TO-BE Process Model](./docs/images/02-bpmn-tobe-workflow.png)
+> 📸 **Image Placeholder 02:** *Chèn hình ảnh Sơ đồ Quy trình TO-BE (BPMN 2.0) chi tiết cho luồng điều phối giao nhận.*
 ---
-
-### 3.2 System Requirements Summary
-
-#### Functional Requirements (25 Core FRs)
-
-The 25 functional requirements are structured into **5 core business modules**:
-
-* **Order Lifecycle Management (FR-06 to FR-10, FR-20):** Order creation with auto-generated tracking codes (`DVCxxx`), multi-criteria filtering, lifecycle state management (*New, Dispatching, Assigned, In-Transit, Completed, Cancelled*), and immutable status history logs.
-* **Resource Allocation &amp; Dispatch (FR-11 to FR-15, FR-19):** Management of driver profiles (license classes, expiry dates) and vehicle fleets (tonnage capacity, maintenance status); real-time availability checks; dispatch order creation (`LDPxxx`); and transit incident logging.
-* **Driver Workspace (FR-16 to FR-18):** Dedicated driver interface for viewing assigned tasks, accepting/rejecting assignments with mandatory reason entry, and updating real-time trip milestones.
-* **Financial Settlement &amp; Invoicing (FR-21 to FR-23):** Recording payment receipts (`PTTxxx`), tracking unpaid accounts, and issuing VAT invoices (`HDxxx`) with automated tax calculations and printable document exports.
-* **Security &amp; Administration (FR-01 to FR-05, FR-24, FR-25):** Role-based authentication, user account management, granular permission assignment, executive dashboard, and operational BI reports.
-
-#### Key Non-Functional Requirements (18 NFRs)
-
-* **Performance (NFR-01):** Standard query and navigation response time within 2–5 seconds under normal operational loads.
-* **Access Control (NFR-04, NFR-05):** Mandatory user authentication and strict feature restriction mapped to assigned roles (`VT001` to `VT005`).
-* **Data Integrity (NFR-07, NFR-08):** Mandatory field validation, unique constraint checks (Tax IDs, phone numbers, license plates), and synchronized state updates across screens.
-* **Auditability (NFR-09):** Immutable logging of order status changes, timestamps, and updating user accounts.
-* **Exportability (NFR-15):** Exporting operational and financial reports to PDF and CSV formats.
-
+3.2 System Requirements Specification (BRD)
+-  **Functional Requirements (25 Core FRs)**
+The 25 functional requirements are structured into 5 core operational modules:
+Order Intake & Lifecycle Tracking (FR-01 to FR-05): Centralized order creation, unique tracking code generation (`DVCxxx`), multi-criteria filtering, and lifecycle state transitions (New ➔ Dispatching ➔ Assigned ➔ In-Transit ➔ Completed ➔ Cancelled).
+Resource Dispatching & Schedule Validation (FR-06 to FR-10): Real-time monitoring of driver licenses and vehicle tonnage capacities, system-assisted resource filtering, and dispatch order generation (`LDPxxx`).
+Driver Workspace & Milestone Reporting (FR-11 to FR-15): Dedicated "My Tasks" interface for drivers, trip acceptance/rejection with mandatory reason logging, 1-click status updates, and transit incident reporting.
+Billing, Invoicing & Financial Settlement (FR-16 to FR-20): Payment receipt logging (`PTTxxx`), bank transaction code tracking, automated VAT invoice calculation (`HDxxx`), and unpaid account tracking.
+Role-Based Security & Executive Reporting (FR-21 to FR-25): Granular RBAC permission mapping, user account lifecycle management, printable document exports (PDF/CSV), and real-time executive dashboard analytics.
+-  **Key Non-Functional Requirements (18 NFRs)**
+Performance: Query response time $\le$ 2–5 seconds for standard operations.
+Concurrency: Multi-user support with isolated transaction sessions.
+Security & RBAC: Passphrase-encrypted credentials and role-based menu restrictions.
+Data Integrity: Strict validation on Tax IDs, phone numbers, addresses, and delivery dates.
+Auditability: Immutable status history logs capturing user actions, timestamps, and state changes.
 ---
-
-### 3.3 Modeling Diagrams
-
-#### 1\. Business Function Diagram (BFD)
-
-Structured into 5 primary operational pillars:
-
-1. `1.0` System Administration &amp; Security
-2. `2.0` Logistics Master Data Management
-3. `3.0` Order Management &amp; Dispatching
-4. `4.0` Financial Settlement &amp; Invoicing
-5. `5.0` Reporting &amp; Statistics
-
-\--Image of: --03-bfd-diagram *Figure 2: Business Function Diagram (BFD).*
-
-#### 2\. Data Flow Diagrams (DFD)
-
-* **Context Level DFD:** Defines external interactions between the central system (`0.0`) and external entities (**Customer**, **Management**).
-* **Level 0 DFD:** Decomposes system operations into 5 major processes linked to 4 central data stores:  
-  * `D1: Logistics Master Data` (Customers, Drivers, Vehicles)
-  * `D2: Orders &amp; Dispatch Records` (Orders, Line Items, Dispatch Slips, Incident Logs)
-  * `D3: Payments &amp; Invoices` (Payment Receipts, VAT Invoices, Fee Categories)
-  * `D4: Accounts &amp; Permissions` (User Accounts, System Roles, Permissions)
-* **Level 1 DFD:** Detailed breakdowns for order dispatching and financial accounting.
-
-\--Image of: --04-dfd-level-0 *Figure 3: Data Flow Diagram (DFD) Level 0.*
-
-#### 3\. UML Use Case Architecture
-
-Encompasses **56 Use Cases** (`UC001` to `UC056`) across 5 primary human actors (**Dispatcher**, **Driver**, **Accountant**, **Manager**, **System Admin**) and 1 automated actor (**System Handler**).
-
-\--Image of: --05-uml-usecase-model *Figure 4: Overall UML Use Case Model.*
-
+3.3 Modeling Diagrams
+To transform raw requirements into a structured system architecture, standard modeling techniques were applied:
+1. Business Function Diagram (BFD)
+> **BA Modeling Objective:** Applied BFD for functional decomposition, breaking down HIVE's overall logistics operations into **5 Primary Operational Pillars**: System Security & Admin, Logistics Master Data, Order Management & Dispatching, Financial Settlement, and Reporting & Analytics.
+![Business Function Diagram](./docs/images/03-bfd-diagram.png)
+> 📸 **Image Placeholder 03:** *Chèn hình ảnh Sơ đồ Phân rã Chức năng (Business Function Diagram - BFD).*
+2. Data Flow Diagrams (DFD)
+> **BA Modeling Objective:** Applied 2-level DFDs to establish clear system boundaries and map data flows between external entities, core business processes, and central data stores across departments.
+Context Level DFD: Defines system boundaries between the central platform and external actors (Customer, Management).
+Level 0 DFD: Decomposes into 5 core processes interacting with 4 data stores (`D1: Master Data`, `D2: Orders & Dispatch`, `D3: Payments & Invoices`, `D4: Security & Accounts`).
+![DFD Context Level Diagram](./docs/images/08-dfd-context-level.png)
+> 📸 **Image Placeholder 08:** *Chèn hình ảnh Sơ đồ Luồng Dữ liệu (DFD) Mức Ngữ cảnh (Context Level Diagram).*
+![DFD Level 0 Diagram](./docs/images/04-dfd-level-0.png)
+> 📸 **Image Placeholder 04:** *Chèn hình ảnh Sơ đồ Luồng Dữ liệu (DFD) Mức 0 (Level 0 Diagram).*
+3. UML Use Case Architecture
+> **BA Modeling Objective:** Applied UML Use Case modeling to specify detailed functional interactions across 5 user roles (**Dispatcher**, **Driver**, **Accountant**, **Manager**, **Admin**) and 1 automated system actor (**System Handler**), encompassing **56 Use Cases** (`UC001` to `UC056`).
+> 
+> To demonstrate analytical depth, in addition to the master system-level Use Case diagram, each core management module is further decomposed into detailed sub-use case diagrams (Abstract / Sub-diagrams) to clarify granular `<<extend>>` and `<<include>>` operational paths:
+> * **Customer Management (`UC010`–`UC014`):** Sub-diagram detailing client profile creation, multi-criteria search, and information updates (`uc1.png`).
+> * **Fleet & Driver Resource Management (`UC015`–`UC024`):** Sub-diagram mapping driver license classes, vehicle tonnage tracking, and operational status toggling (`uc2.png`).
+> * **Dispatch Operations (`UC025`–`UC031`):** Sub-diagram specifying driver/vehicle matching, dispatch slip issuance, and reassignment (`uc3.png`).
+> * **Transport Order Management (`UC032`–`UC039`):** Sub-diagram detailing order creation, immutable tracking code generation (`DVCxxx`), and status audit trails (`uc4.png`).
+> * **Payment & Invoicing (`UC040`–`UC045`):** Sub-diagram mapping transaction logging, bank code verification, and VAT invoice issuance (`uc5.png`).
+> * **User Account Security (`UC046`–`UC051`):** Sub-diagram specifying user provisioning, password resets, and account status management (`uc6.png`).
+> * **Reporting & Analytics (`UC052`–`UC056`):** Sub-diagram mapping executive KPI dashboards, revenue filtering, and report exports (`uc7.png`).
+![UML Use Case Model](./docs/images/05-uml-usecase-model.png)
+> 📸 **Image Placeholder 05:** *Chèn hình ảnh Sơ đồ Tổng quan Use Case UML (Master UML Use Case Diagram) cùng bộ 7 sơ đồ phân rã Use Case con (Sub-diagrams) cho từng phân hệ quản lý.*
 ---
-
-## 4\. Relational Database Engineering (`QuanLyDieuPhoiVanChuyen_HIVE`)
-
-### 4.1 Database Architecture Overview
-
-* **Database Engine:** Microsoft SQL Server 2022
-* **Database Name:** `QuanLyDieuPhoiVanChuyen_HIVE`
-* **Schema Design:** **21 Physical Tables** in 3rd Normal Form (3NF) across 5 core operational domains:
-
-```
-                                +-----------------------------------+
-                                | QuanLyDieuPhoiVanChuyen_HIVE (DB) |
-                                +-----------------------------------+
-                                                  |
-     +------------------+------------------+------+------------------+------------------+
-     |                  |                  |                         |                  |
-+----+-----+       +----+-----+       +----+-----+             +-----+----+       +-----+----+
-|PERSONNEL &amp;|      | CUSTOMERS|       |  FLEET &amp; |             | ORDERS &amp; |       | PAYMENTS |
-|  SECURITY |      |          |       |   CARGO  |             | DISPATCH |       |&amp; INVOICES|
-+-----------+      +----------+       +----------+             +----------+       +----------+
-| ChucVu    |      | LoaiKH   |       | LoaiPT   |             | DonVC    |       | PhieuTT  |
-| NhanVien  |      | KhachHang|       | PhuongTien|            | ChiTietDVC|      | HoaDonVC |
-| TaiKhoan  |      +----------+       | LoaiHH   |             | LenhDP   |       | LoaiPhiVC|
-| VaiTroHT  |                         +----------+             | LichSuLS |       | ChiTietHD|
-| Quyen     |                                                  | PhieuPS  |       +----------+
-| PhanQuyen |                                                  +----------+
-+-----------+
-
-```
-
-\--Image of: --06-erd-physical-model *Figure 5: Physical Entity-Relationship Diagram (ERD) - 21 Relational Tables.*
-
+3.4 Business Rules & Schedule Integrity Constraints
+> **BA System Thinking & Technical Enforcement:** Defining clear, structured business rules and operational constraints during analysis is critical for technical execution. By establishing well-defined logical rules during the BA phase, developers received clear specifications to enforce data integrity directly at the database layer via automated T-SQL triggers.
+Core Business Rules & System Constraints:
+Driver Schedule Overlap Constraint:
+Business Rule: A driver cannot be assigned to two active transport orders with overlapping time slots.
+Technical Enforcement: Implemented via `TRG_LenhDieuPhoi_KhongTrungTaiXe`, which checks active dispatch states (`Chờ xác nhận`, `Đã tiếp nhận`, `Đang thực hiện`) and automatically rolls back conflicting assignments.
+Vehicle Double-Booking Constraint:
+Business Rule: A vehicle cannot be assigned to multiple concurrent dispatch orders at the same scheduled time.
+Technical Enforcement: Implemented via `TRG_LenhDieuPhoi_KhongTrungPhuongTien`, enforcing fleet allocation integrity during order dispatching.
+Automated Invoicing & VAT Recalculation Rule:
+Business Rule: Invoices must automatically recalculate pre-tax line item totals and compute VAT amounts whenever charges or line items change.
+Technical Enforcement: Implemented via `TRG_ChiTietHDVC_CapNhatTongTienHoaDon` to minimize manual calculation errors and reduce reconciliation effort.
 ---
-
-### 4.2 Automated T-SQL Business Rule Triggers
-
-#### 1\. Driver Double-Booking Prevention (`TRG_LenhDieuPhoi_KhongTrungTaiXe`)
-
-Prevents assigning a driver to multiple active dispatch orders at the same scheduled time:
-
-```
-CREATE TRIGGER TRG_LenhDieuPhoi_KhongTrungTaiXe
-ON LenhDieuPhoi AFTER INSERT, UPDATE AS
-BEGIN
-    IF EXISTS (
-        SELECT 1 FROM LenhDieuPhoi l1
-        JOIN LenhDieuPhoi l2 ON l1.MaLenhDP &lt;&gt; l2.MaLenhDP
-            AND l1.MaNV = l2.MaNV
-            AND l1.TGPhanCong = l2.TGPhanCong
-        WHERE l1.TrangThaiLenh IN (N'Chờ xác nhận', N'Đã tiếp nhận', N'Đang thực hiện')
-          AND l2.TrangThaiLenh IN (N'Chờ xác nhận', N'Đã tiếp nhận', N'Đang thực hiện')
-          AND l1.TGPhanCong IS NOT NULL
-    )
-    BEGIN
-        RAISERROR (N'Tài xế đã có lệnh điều phối đang hoạt động tại thời điểm phân công này.', 16, 1);
-        ROLLBACK TRANSACTION;
-        RETURN;
-    END
-END;
-
-```
-
-#### 2\. Vehicle Double-Booking Prevention (`TRG_LenhDieuPhoi_KhongTrungPhuongTien`)
-
-Ensures a vehicle cannot be assigned to two active dispatch orders simultaneously.
-
-#### 3\. Invoice Pre-Tax &amp; VAT Total Recalculation (`TRG_ChiTietHDVC_CapNhatTongTienHoaDon`)
-
-Automatically recalculates `HoaDonVanChuyen.TongTienTruocThue` whenever invoice line items (`ChiTietHDVC`) are modified. Post-tax totals (`TongTienSauThue`) are calculated via a persistent computed column:
-
-```
-CAST(ROUND(TongTienTruocThue * (1 + ThueVAT / 100.0), 2) AS DECIMAL(18,2))
-
-```
-
+4. Database & Technical Support (`QuanLyDieuPhoiVanChuyen_HIVE`)
+To support the business processes and data flows identified during analysis, a relational database schema was implemented in Microsoft SQL Server 2022.
+4.1 Relational Schema Overview (20 Tables)
+The database consists of 20 physical tables organized across 5 functional domains:
+Domain / Module	Operational Focus	Relational Tables	Table Count
+1. Personnel & Security	User accounts, roles, permissions & organizational hierarchy	`ChucVu`, `NhanVien`, `TaiKhoan`, `VaiTroHeThong`, `Quyen`, `PhanQuyen`	6
+2. Customer Management	Client profiles (corporate/individual) & categories	`LoaiKhachHang`, `KhachHang`	2
+3. Fleet & Cargo Assets	Transport vehicles, tonnage capacities & cargo types	`LoaiPhuongTien`, `PhuongTien`, `LoaiHangHoa`	3
+4. Transport Operations	Orders, order items, dispatch slips, status history & incident logs	`DonVanChuyen`, `ChiTietDVC`, `LenhDieuPhoi`, `LichSuTrangThaiDon`, `PhieuPhatSinhVC`	5
+5. Billing & Invoicing	Payment receipts, VAT invoices & fee categories	`PhieuThanhToanVC`, `HoaDonVanChuyen`, `LoaiPhiVanChuyen`, `ChiTietHDVC`	4
+![Physical ERD Diagram](./docs/images/06-erd-physical-model.png)
+> 📸 **Image Placeholder 06:** *Chèn hình ảnh Sơ đồ ERD Vật lý (Physical ERD Diagram) 20 bảng trong SQL Server.*
 ---
-
-### 4.3 Role-Based Access Control (RBAC) Security Structure
-
-The database controls feature access through **67 System Permissions** (`Q001` to `Q067`) mapped to **5 System Roles** (`VT001` – `VT005`):
-
-* `VT001` (Dispatcher): Orders, driver/vehicle lookup, and dispatch management (`Q021-Q027`, `Q030`, `Q033`, `Q036-Q051`).
-* `VT002` (Driver): View assigned trips, update progress, and log transit incidents (`Q036`, `Q040`, `Q044`, `Q047-Q050`).
-* `VT003` (Accountant): Payment records, VAT invoicing, and financial reporting (`Q024`, `Q036`, `Q040`, `Q052-Q065`, `Q067`).
-* `VT004` (Manager): Read-only operational oversight and BI reporting (`Q066`, `Q067`).
-* `VT005` (System Admin): Full system administration (`Q001-Q067`).
-
-*Note:* The `PhanQuyen` table supports both **Role-Level Permissions** (`MaVT`) and **Account-Level Overrides** (`MaTK`), enabling custom permission grants or revocations for individual user accounts.
-
+4.2 Automated T-SQL Business Rule Triggers
+Key business rules from the analysis phase were embedded directly into SQL Server via T-SQL triggers to enforce data integrity at the database layer:
+Driver Double-Booking Prevention (`TRG_LenhDieuPhoi_KhongTrungTaiXe`): Checks active dispatch orders (`Chờ xác nhận`, `Đã tiếp nhận`, `Đang thực hiện`) and rolls back any attempt to assign a driver to an overlapping time slot.
+Vehicle Double-Booking Prevention (`TRG_LenhDieuPhoi_KhongTrungPhuongTien`): Prevents assigning the same vehicle to multiple concurrent dispatch slips.
+Automated Invoicing & VAT Recalculation (`TRG_ChiTietHDVC_CapNhatTongTienHoaDon`): Automatically recalculates pre-tax totals and computes final VAT amounts upon line item updates.
 ---
-
-## 5\. C# WinForms Application Prototype
-
-### 5.1 Technology Stack &amp; Implementation
-
-* **Application Type:** C# .NET Windows Forms Desktop Prototype
-* **IDE:** Microsoft Visual Studio 2022
-* **Database Connection:** ADO.NET (`Microsoft.Data.SqlClient`) connecting to SQL Server 2022
-* **Data Presentation:** DataGridView, Form-based navigation, and printable document layouts
-
+4.3 Role-Based Access Control (RBAC)
+Database access is secured using 67 System Permissions mapped across 5 User Roles:
+Role ID	System Role Name	Target User Group	Mapped Permissions (`Q001`–`Q067`)	Operational Scope & Authority
+`VT001`	Dispatcher	Nhân viên Điều phối	`Q021–Q027`, `Q030`, `Q033`, `Q036–Q051`	Order intake, fleet lookup, driver dispatching
+`VT002`	Driver	Tài xế	`Q036`, `Q040`, `Q044`, `Q047–Q050`	View assigned trips, update milestone status, log incidents
+`VT003`	Accountant	Kế toán	`Q024`, `Q036`, `Q040`, `Q052–Q065`, `Q067`	Record payments, issue VAT invoices, export financial reports
+`VT004`	Manager	Ban Quản lý	Read-only operational tables + `Q066–Q067`	Executive dashboard, revenue analytics, driver performance
+`VT005`	System Admin	Quản trị hệ thống	Full Access (`Q001–Q067`)	User provisioning, RBAC configuration, audit logging
+![RBAC Permission Matrix](./docs/images/10-rbac-permission-matrix.png)
+> 📸 **Image Placeholder 10:** *Chèn hình ảnh Ma trận Phân quyền RBAC (Role-Based Access Control Matrix).*
 ---
-
-### 5.2 Role-Based User Interfaces
-
-```
-+------------------+-------------------------------------------------------------------+
-| User Role        | Application Interface Functions                                   |
-+------------------+-------------------------------------------------------------------+
-| Dispatcher       | • Interactive dispatch board for pending orders (DVCxxx).         |
-|                  | • Driver &amp; vehicle capacity matching and dispatch slip generation. |
-|                  | • Order creation, updates, and customer master records.           |
-+------------------+-------------------------------------------------------------------+
-| Driver           | • Task management board ("Nhiệm vụ của tôi").                      |
-|                  | • Trip acceptance/rejection dialogs with mandatory reason entry.  |
-|                  | • Milestone status updates and transit incident logging.          |
-+------------------+-------------------------------------------------------------------+
-| Accountant       | • Payment receipt entry form with transaction code validation.    |
-|                  | • Automatic VAT invoice generation and fee itemization.           |
-|                  | • Unpaid accounts filter and revenue reconciliation.              |
-+------------------+-------------------------------------------------------------------+
-| Manager          | • Executive summary view with key operational metric cards.       |
-|                  | • Daily and monthly revenue summary reports.                      |
-+------------------+-------------------------------------------------------------------+
-| Admin            | • User account provisioning and status toggling.                  |
-|                  | • Password reset dialogs and role/permission mapping matrix.       |
-+------------------+-------------------------------------------------------------------+
-
-```
-
-\--Image of: --07-csharp-winforms-ui *Figure 6: C# WinForms Application Interface - Dispatch &amp; Incident Management Forms.*
-
+5. C# WinForms Application & Workflow Validation
+5.1 Purpose & Role in Business Analysis
+While the primary focus of this case study is Business Analysis & System Design, a functional C# WinForms desktop application was developed specifically to validate and test the feasibility and logical flow of the analyzed business workflows (BPMN), system rules, and 56 Use Cases in a simulated operational environment.
+5.2 Role-Based User Interfaces & Validation Scope
+The application connects to SQL Server via ADO.NET and implements 5 role-based user interfaces corresponding directly to the operational roles defined during requirements analysis:
+Dispatcher Board: Validates order intake (`DVCxxx`), driver/vehicle availability matching, and dispatch slip creation (`LDPxxx`) with trigger conflict checks.
+Driver Workspace ("Nhiệm vụ của tôi"): Validates task acceptance/rejection, real-time milestone timestamp updates, and transit incident logging.
+Accounting Desk: Validates payment receipt logging (`PTTxxx`), bank transaction code tracking, and automated VAT invoice generation (`HDxxx`).
+Executive Dashboard: Validates real-time summary cards, revenue trend charts, and fleet utilization reporting for management decision-making.
+Admin Security Center: Validates user account provisioning and granular RBAC permission matrix enforcement (–).
+![C# WinForms Application UI](./docs/images/07-csharp-winforms-ui.png)
+> 📸 **Image Placeholder 07:** *Chèn hình ảnh Giao diện Ứng dụng C# WinForms (Form Điều phối & Xử lý sự cố).*
 ---
-
-## 6\. Repository Layout &amp; Artifacts
-
-```
-HIVE-Delivery-Coordination-System/
-├── README.md                              &lt;-- Master Documentation File
-├── docs/                                  &lt;-- Visual Diagram Assets
-│   └── images/
-│       ├── 01-hive-system-architecture.png
-│       ├── 02-bpmn-tobe-workflow.png
-│       ├── 03-bfd-diagram.png
-│       ├── 04-dfd-level-0.png
-│       ├── 05-uml-usecase-model.png
-│       ├── 06-erd-physical-model.png
-│       ├── 07-csharp-winforms-ui.png
-│       ├── 08-dfd-context-level.png
-│       ├── 09-dfd-level-1.png
-│       └── 10-rbac-permission-matrix.png
-├── 01-Business-Analysis/                  &lt;-- BABOK Specification Artifacts
-│   ├── BRD_HIVE_Delivery_System.pdf       &lt;-- Business Requirements Document
-│   ├── BPMN_AsIs_vs_ToBe.png              &lt;-- Business Process Models
-│   ├── DFD_Context_Level0_Level1.png      &lt;-- Data Flow Diagrams
-│   └── UML_Use_Case_Specifications.xlsx
-├── 02-Database-Design/                    &lt;-- SQL Server Database Implementation
-│   ├── ERD_Physical_Model.png             &lt;-- Relational ERD
-│   └── QuanLyDieuPhoiVanChuyen_HIVE.sql   &lt;-- Master T-SQL Script (Schema, Triggers, Test Data)
-└── 03-Software-Application/               &lt;-- C# WinForms Source Code
-    ├── HIVE_Delivery_System.sln           &lt;-- Visual Studio Solution
-    └── HIVE_Delivery_System/              &lt;-- C# Forms, Models, and Data Access Layers
-
-```
-
+6. Repository Layout & Artifacts
+Directory / File Path	Asset Type	Description & Repository Contents
+`README.md`	Master Documentation	Project overview, BA contributions, workflow specifications & database architecture
+`docs/images/`	Visual Assets	Directory containing 10 image diagram placeholders (`01-...` to `10-...`)
+`01-Business-Analysis/`	BA Requirements	BRD document, BPMN process models, 2-level DFDs (Context Level & Level 0), BFD, UML Use Cases
+`02-Database-Design/`	SQL Database	Physical ERD diagram + Master T-SQL script (`QuanLyDieuPhoiVanChuyen_HIVE.sql`)
+`03-Software-Application/`	C# Application	Visual Studio Solution (`.sln`), C# WinForms UI forms, and ADO.NET data layer
 ---
-
-## Academic Attribution &amp; Credits
-
-This project was developed as a Professional Practice Report case study for the **Management Information Systems (MIS)** program at the **University of Finance - Marketing (UFM)** under the academic guidance of **M.Sc. Lâm Hoàng Trúc Mai**.
+7. Future Roadmap & Potential Enhancements
+To build upon the current system design and software implementation, several practical, incremental enhancements are identified for future development:
+Mobile Interface for Drivers: Extending the Driver Workspace ("Nhiệm vụ của tôi") from the desktop client to a mobile-responsive web view or cross-platform mobile application (e.g., Flutter) so drivers can update trip milestones on the go.
+Automated Customer Notifications: Integrating an Email or Zalo OA / SMS gateway to automatically send status updates and digital payment receipts to clients upon order dispatch and completion.
+Interactive Dashboard Analytics: Enhancing the Executive Console in WinForms with interactive chart controls (e.g., LiveCharts) for visual trend analysis on monthly revenue, order completion rates, and fleet utilization.
+Multi-Branch / Multi-Depot Expansion: Extending the database schema to support multi-depot operations, allowing HIVE to manage regional branch offices and inter-depot transport assignments.
+Advanced Report Exporting: Adding formatted Excel (`.xlsx`) export templates via libraries like `ClosedXML` to streamline monthly financial reconciliation for the accounting team.
+---
+8. Academic Attribution & Credits
+This project was developed as an academic case study for the Professional Practice Report (Thực hành nghề nghiệp) course in Management Information Systems (MIS) at the University of Finance - Marketing (UFM) under the academic guidance of M.Sc. Lâm Hoàng Trúc Mai.
