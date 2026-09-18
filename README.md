@@ -33,7 +33,40 @@ This academic case study delivers a comprehensive, end-to-end Business Analysis 
 *   **Database Engineering & Business Rule Enforcement:** Implementing a structured relational database (`QuanLyDieuPhoiVanChuyen_HIVE`) with automated T-SQL triggers to enforce business constraints and Role-Based Access Control (RBAC).
 *   **Application Validation:** Developing a functional C# WinForms desktop application connected to SQL Server to validate the feasibility and logical flow of end-to-end operational workflows and Use Cases across 5 user roles.
 
-![High-level System Architecture](./docs/images/01-hive-system-architecture.png)
+![High-level System Architecture](graph TD
+    %% Định nghĩa các khối
+    subgraph Presentation_Layer [Presentation Layer: C# WinForms]
+        UI1([Dispatcher Board])
+        UI2([Driver Workspace])
+        UI3([Accounting Desk])
+        UI4([Executive Dashboard])
+        UI5([Admin Security Center])
+    end
+
+    subgraph Application_Layer [Application Layer: ADO.NET]
+        DAL{Data Access & Business Logic}
+    end
+
+    subgraph Database_Layer [Data Layer: MS SQL Server 2022]
+        DB[(QuanLyDieuPhoiVanChuyen_HIVE)]
+        TRG[T-SQL Triggers: Conflict Validation]
+        RBAC[RBAC: Security & Permissions]
+    end
+
+    %% Luồng kết nối
+    UI1 -.->|Queries/Updates| DAL
+    UI2 -.->|Status Sync| DAL
+    UI3 -.->|Financial Data| DAL
+    UI4 -.->|Read-only Analytics| DAL
+    UI5 -.->|User Provisioning| DAL
+
+    DAL ===>|SQL Connection| DB
+    DB --- TRG
+    DB --- RBAC
+
+    %% Màu sắc cho đẹp mắt
+    style DB fill:#f9f,stroke:#333,stroke-width:2px
+    style DAL fill:#bbf,stroke:#333,stroke-width:2px)
 > 📸 **Image Placeholder 01:** *Chèn hình ảnh Sơ đồ Kiến trúc Hệ thống Điều phối Vận tải HIVE (System Architecture Diagram).*
 
 ---
