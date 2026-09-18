@@ -1,4 +1,4 @@
-# HIVE Logistics Management System
+# 🚚 HIVE Logistics Management System
 **Academic Business Analysis & System Design Case Study**
 
 > **Academic Institution:** University of Finance - Marketing (UFM), Ho Chi Minh City  
@@ -11,12 +11,12 @@
 
 ---
 
-## 1. Project Overview
+## 📌 1. Project Overview
 
 ### 1.1 Business Context
 HIVE Transportation Services Trading Co., Ltd. is an internal logistics and transport coordination firm providing freight delivery across urban and inter-provincial routes. As order volume grew, the company experienced operational challenges due to fragmented, manual record-keeping—relying on paper notes, disconnected Excel spreadsheets, phone calls, and Zalo messaging groups.
 
-### 1.2 Key Operational Pain Points
+### 1.2 ⚠️ Key Operational Pain Points
 To address several key drivers of operational inefficiency, the business analysis identified five core pain points:
 
 | Operational Domain | AS-IS Manual Bottleneck | Impact on Business Operations |
@@ -33,45 +33,12 @@ This academic case study delivers a comprehensive, end-to-end Business Analysis 
 *   **Database Engineering & Business Rule Enforcement:** Implementing a structured relational database (`QuanLyDieuPhoiVanChuyen_HIVE`) with automated T-SQL triggers to enforce business constraints and Role-Based Access Control (RBAC).
 *   **Application Validation:** Developing a functional C# WinForms desktop application connected to SQL Server to validate the feasibility and logical flow of end-to-end operational workflows and Use Cases across 5 user roles.
 
-![High-level System Architecture](graph TD
-    %% Định nghĩa các khối
-    subgraph Presentation_Layer [Presentation Layer: C# WinForms]
-        UI1([Dispatcher Board])
-        UI2([Driver Workspace])
-        UI3([Accounting Desk])
-        UI4([Executive Dashboard])
-        UI5([Admin Security Center])
-    end
-
-    subgraph Application_Layer [Application Layer: ADO.NET]
-        DAL{Data Access & Business Logic}
-    end
-
-    subgraph Database_Layer [Data Layer: MS SQL Server 2022]
-        DB[(QuanLyDieuPhoiVanChuyen_HIVE)]
-        TRG[T-SQL Triggers: Conflict Validation]
-        RBAC[RBAC: Security & Permissions]
-    end
-
-    %% Luồng kết nối
-    UI1 -.->|Queries/Updates| DAL
-    UI2 -.->|Status Sync| DAL
-    UI3 -.->|Financial Data| DAL
-    UI4 -.->|Read-only Analytics| DAL
-    UI5 -.->|User Provisioning| DAL
-
-    DAL ===>|SQL Connection| DB
-    DB --- TRG
-    DB --- RBAC
-
-    %% Màu sắc cho đẹp mắt
-    style DB fill:#f9f,stroke:#333,stroke-width:2px
-    style DAL fill:#bbf,stroke:#333,stroke-width:2px)
+![High-level System Architecture](./docs/images/01-hive-system-architecture.png)
 > 📸 **Image Placeholder 01:** *Chèn hình ảnh Sơ đồ Kiến trúc Hệ thống Điều phối Vận tải HIVE (System Architecture Diagram).*
 
 ---
 
-##  2. My Contribution
+## 🎯 2. My Contribution
 
 | Core Domain | Key Contributions & Delivered Artifacts |
 | :--- | :--- |
@@ -81,7 +48,7 @@ This academic case study delivers a comprehensive, end-to-end Business Analysis 
 
 ---
 
-##  3. Business Analysis & System Modeling
+## 📐 3. Business Analysis & System Modeling
 
 ### 3.1 TO-BE Business Architecture & Workflow
 The TO-BE Process digitizes the core delivery lifecycle into a streamlined workflow connecting 5 internal operational roles:
@@ -101,7 +68,7 @@ The TO-BE Process digitizes the core delivery lifecycle into a streamlined workf
 
 ### 3.2 System Requirements Specification (BRD)
 
-**Functional Requirements (25 Core FRs)**
+**📋 Functional Requirements (25 Core FRs)**
 The 25 functional requirements are structured into 5 core operational modules:
 1.  **Order Intake & Lifecycle Tracking (FR-01 to FR-05):** Centralized order creation, unique tracking code generation (`DVCxxx`), multi-criteria filtering, and lifecycle state transitions (New ➔ Dispatching ➔ Assigned ➔ In-Transit ➔ Completed ➔ Cancelled).
 2.  **Resource Dispatching & Schedule Validation (FR-06 to FR-10):** Real-time monitoring of driver licenses and vehicle tonnage capacities, system-assisted resource filtering, and dispatch order generation (`LDPxxx`).
@@ -109,7 +76,7 @@ The 25 functional requirements are structured into 5 core operational modules:
 4.  **Billing, Invoicing & Financial Settlement (FR-16 to FR-20):** Payment receipt logging (`PTTxxx`), bank transaction code tracking, automated VAT invoice calculation (`HDxxx`), and unpaid account tracking.
 5.  **Role-Based Security & Executive Reporting (FR-21 to FR-25):** Granular RBAC permission mapping, user account lifecycle management, printable document exports (PDF/CSV), and real-time executive dashboard analytics.
 
-**Key Non-Functional Requirements (18 NFRs)**
+**⚙️ Key Non-Functional Requirements (18 NFRs)**
 *   **Performance:** Query response time $\le$ 2–5 seconds for standard operations.
 *   **Concurrency:** Multi-user support with isolated transaction sessions.
 *   **Security & RBAC:** Passphrase-encrypted credentials and role-based menu restrictions.
@@ -156,7 +123,7 @@ To transform raw requirements into a structured system architecture, standard mo
 ---
 
 ### 3.4 Business Rules & Schedule Integrity Constraints
-> **BA System Thinking & Technical Enforcement:** Defining **clear, structured business rules** and operational constraints during analysis is critical for technical execution. By establishing **well-defined logical rules** during the BA phase, developers received **clear specifications** to enforce data integrity directly at the database layer via automated T-SQL triggers.
+> 💡 **BA System Thinking & Technical Enforcement:** Defining **clear, structured business rules** and operational constraints during analysis is critical for technical execution. By establishing **well-defined logical rules** during the BA phase, developers received **clear specifications** to enforce data integrity directly at the database layer via automated T-SQL triggers.
 
 **Core Business Rules & System Constraints:**
 1.  **Driver Schedule Overlap Constraint:**
@@ -171,7 +138,7 @@ To transform raw requirements into a structured system architecture, standard mo
 
 ---
 
-## 4. Database & Technical Support (`QuanLyDieuPhoiVanChuyen_HIVE`)
+## 🗄️ 4. Database & Technical Support (`QuanLyDieuPhoiVanChuyen_HIVE`)
 
 To support the business processes and data flows identified during analysis, a relational database schema was implemented in Microsoft SQL Server 2022.
 
@@ -215,7 +182,7 @@ Database access is secured using 67 System Permissions mapped across 5 User Role
 
 ---
 
-##  5. C# WinForms Application & Workflow Validation
+## 💻 5. C# WinForms Application & Workflow Validation
 
 ### 5.1 Purpose & Role in Business Analysis
 While the primary focus of this case study is Business Analysis & System Design, a functional C# WinForms desktop application was developed specifically to validate and test the feasibility and logical flow of the analyzed business workflows (BPMN), system rules, and 56 Use Cases in a simulated operational environment.
@@ -233,7 +200,7 @@ The application connects to SQL Server via ADO.NET and implements 5 role-based u
 
 ---
 
-##  6. Repository Layout & Artifacts
+## 📂 6. Repository Layout & Artifacts
 
 | Directory / File Path | Asset Type | Description & Repository Contents |
 | :--- | :--- | :--- |
@@ -245,7 +212,7 @@ The application connects to SQL Server via ADO.NET and implements 5 role-based u
 
 ---
 
-##  7. Future Roadmap & Potential Enhancements
+## 🔮 7. Future Roadmap & Potential Enhancements
 To build upon the current system design and software implementation, several practical, incremental enhancements are identified for future development:
 *   **Mobile Interface for Drivers:** Extending the Driver Workspace ("Nhiệm vụ của tôi") from the desktop client to a mobile-responsive web view or cross-platform mobile application (e.g., Flutter) so drivers can update trip milestones on the go.
 *   **Automated Customer Notifications:** Integrating an Email or Zalo OA / SMS gateway to automatically send status updates and digital payment receipts to clients upon order dispatch and completion.
@@ -255,5 +222,5 @@ To build upon the current system design and software implementation, several pra
 
 ---
 
-##  8. Academic Attribution & Credits
+## 🎓 8. Academic Attribution & Credits
 This project was developed as an academic case study for the Professional Practice Report (Thực hành nghề nghiệp) course in Management Information Systems (MIS) at the University of Finance - Marketing (UFM) under the academic guidance of M.Sc. Lâm Hoàng Trúc Mai.
