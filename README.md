@@ -33,8 +33,7 @@ This academic case study delivers a comprehensive, end-to-end Business Analysis 
 *   **Database Engineering & Business Rule Enforcement:** Implementing a structured relational database (`QuanLyDieuPhoiVanChuyen_HIVE`) with automated T-SQL triggers to enforce business constraints and Role-Based Access Control (RBAC).
 *   **Application Validation:** Developing a functional C# WinForms desktop application connected to SQL Server to validate the feasibility and logical flow of end-to-end operational workflows and Use Cases across 5 user roles.
 
-![High-level System Architecture](./docs/images/01-hive-system-architecture.png)
-> 📸 **Image Placeholder 01:** *Chèn hình ảnh Sơ đồ Kiến trúc Hệ thống Điều phối Vận tải HIVE (System Architecture Diagram).*
+![High-level System Architecture](Business_Analysis/hive_system_architecture.png)
 
 ---
 
