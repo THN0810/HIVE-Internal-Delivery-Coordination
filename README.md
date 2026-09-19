@@ -60,8 +60,7 @@ The TO-BE Process digitizes the core delivery lifecycle into a streamlined workf
 | 4 | **Financial Settlement** | Accountant (Kế toán) | Records payment receipts (`PTTxxx`), validates bank transaction codes, and generates VAT invoices (`HDxxx`). |
 | 5 | **Executive Oversight** | Manager (Quản lý) | Monitors real-time management dashboard for revenue trends, order completion rates, and fleet utilization. |
 
-![TO-BE Process Model](./docs/images/02-bpmn-tobe-workflow.png)
-> 📸 **Image Placeholder 02:** *Chèn hình ảnh Sơ đồ Quy trình TO-BE (BPMN 2.0) chi tiết cho luồng điều phối giao nhận.*
+![TO-BE Process Model](Business_Analysis/BPMN_TOBE/BPMN_ToBe_Workflow.png)
 
 ---
 
@@ -90,8 +89,7 @@ To transform raw requirements into a structured system architecture, standard mo
 **1. Business Function Diagram (BFD)**
 > **BA Modeling Objective:** Applied BFD for functional decomposition, breaking down HIVE's overall logistics operations into **5 Primary Operational Pillars**: System Security & Admin, Logistics Master Data, Order Management & Dispatching, Financial Settlement, and Reporting & Analytics.
 
-![Business Function Diagram](./docs/images/03-bfd-diagram.png)
-> 📸 **Image Placeholder 03:** *Chèn hình ảnh Sơ đồ Phân rã Chức năng (Business Function Diagram - BFD).*
+![Business Function Diagram](Business_Analysis/BFD)
 
 **2. Data Flow Diagrams (DFD)**
 > **BA Modeling Objective:** Applied **2-level DFDs** to establish clear system boundaries and map data flows between external entities, core business processes, and central data stores across departments.
