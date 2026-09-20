@@ -1,6 +1,9 @@
 #  HIVE Logistics Management System
 **Academic Business Analysis & System Design Case Study**
 
+**Executive Report:** [Read Full Project Report (PDF)](./Project_Report.pdf) 
+**App Source Code:** [View C# Solution](./Application/)
+>
 > **Academic Institution:** University of Finance - Marketing (UFM), Ho Chi Minh City  
 > **Faculty:** Faculty of Data Science | **Department:** Management Information Systems (MIS)  
 > **Course:** Professional Practice Report (Thực hành nghề nghiệp)  
@@ -89,19 +92,18 @@ To transform raw requirements into a structured system architecture, standard mo
 **1. Business Function Diagram (BFD)**
 > **BA Modeling Objective:** Applied BFD for functional decomposition, breaking down HIVE's overall logistics operations into **5 Primary Operational Pillars**: System Security & Admin, Logistics Master Data, Order Management & Dispatching, Financial Settlement, and Reporting & Analytics.
 
-![Business Function Diagram](Business_Analysis/BFD)
+![Business Function Diagram](Business_Analysis/BFD/Business_Function_Diagram.png)
 
 **2. Data Flow Diagrams (DFD)**
 > **BA Modeling Objective:** Applied **2-level DFDs** to establish clear system boundaries and map data flows between external entities, core business processes, and central data stores across departments.
 *   **Context Level DFD:** Defines system boundaries between the central platform and external actors (Customer, Management).
 *   **Level 0 DFD:** Decomposes into 5 core processes interacting with 4 data stores (`D1: Master Data`, `D2: Orders & Dispatch`, `D3: Payments & Invoices`, `D4: Security & Accounts`).
 
-![DFD Context Level Diagram](./docs/images/08-dfd-context-level.png)
-> 📸 **Image Placeholder 08:** *Chèn hình ảnh Sơ đồ Luồng Dữ liệu (DFD) Mức Ngữ cảnh (Context Level Diagram).*
+![DFD Context Level Diagram](Business_Analysis/DFD/DFD_Context_Level.png)
+Level 0 Data Flow Diagram illustrating 5 core processes.
 
-![DFD Level 0 Diagram](./docs/images/04-dfd-level-0.png)
-> 📸 **Image Placeholder 04:** *Chèn hình ảnh Sơ đồ Luồng Dữ liệu (DFD) Mức 0 (Level 0 Diagram).*
-
+![DFD Level 0 Diagram](Business_Analysis/DFD/DFD_Level_0.png)
+> **Deep Dive into BPMN & BRD & DFD:** [Download BA Master Workspace (.drawio)](Business_Analysis/BPMN+BFD+DFD.drawio)
 **3. UML Use Case Architecture**
 > **BA Modeling Objective:** Applied UML Use Case modeling to specify **detailed functional interactions** across 5 user roles (**Dispatcher**, **Driver**, **Accountant**, **Manager**, **Admin**) and 1 automated system actor (**System Handler**), encompassing **56 Use Cases** (`UC001` to `UC056`).
 > 
@@ -114,9 +116,10 @@ To transform raw requirements into a structured system architecture, standard mo
 > * **User Account Security (`UC046`–`UC051`):** Sub-diagram specifying user provisioning, password resets, and account status management (`uc6.png`).
 > * **Reporting & Analytics (`UC052`–`UC056`):** Sub-diagram mapping executive KPI dashboards, revenue filtering, and report exports (`uc7.png`).
 
-![UML Use Case Model](./docs/images/05-uml-usecase-model.png)
-> 📸 **Image Placeholder 05:** *Chèn hình ảnh Sơ đồ Tổng quan Use Case UML (Master UML Use Case Diagram) cùng bộ 7 sơ đồ phân rã Use Case con (Sub-diagrams) cho từng phân hệ quản lý.*
+![UML Use Case Model](Business_Analysis/Usecase/00_Overall_System_UseCase.png)
 
+**Read Specifications:** [View 56 Use Case Specifications (Project Report)](./Project_Report.pdf) 
+[View Enterprise Architect File (.eapx)](./Business_Analysis/Usecase/Usecase.eapx)
 ---
 
 ### 3.4 Business Rules & Schedule Integrity Constraints
@@ -150,9 +153,8 @@ The database consists of 20 physical tables organized across 5 functional domain
 | **4. Transport Operations** | Orders, order items, dispatch slips, status history & incident logs | `DonVanChuyen`, `ChiTietDVC`, `LenhDieuPhoi`, `LichSuTrangThaiDon`, `PhieuPhatSinhVC` | 5 |
 | **5. Billing & Invoicing** | Payment receipts, VAT invoices & fee categories | `PhieuThanhToanVC`, `HoaDonVanChuyen`, `LoaiPhiVanChuyen`, `ChiTietHDVC` | 4 |
 
-![Physical ERD Diagram](./docs/images/06-erd-physical-model.png)
-> 📸 **Image Placeholder 06:** *Chèn hình ảnh Sơ đồ ERD Vật lý (Physical ERD Diagram) 20 bảng trong SQL Server.*
-
+![Physical ERD Diagram](Database_Design/Physical_Model.png)
+> **Code Inspection:** [View Master T-SQL Script (Tables, RBAC, Triggers)](Database_Design/HIVE_Full_Database_Script.sql)
 ---
 
 ### 4.2 Automated T-SQL Business Rule Triggers
@@ -174,9 +176,6 @@ Database access is secured using 67 System Permissions mapped across 5 User Role
 | `VT004` | **Manager** | Ban Quản lý | Read-only operational tables + `Q066–Q067` | Executive dashboard, revenue analytics, driver performance |
 | `VT005` | **System Admin** | Quản trị hệ thống | Full Access (`Q001–Q067`) | User provisioning, RBAC configuration, audit logging |
 
-![RBAC Permission Matrix](./docs/images/10-rbac-permission-matrix.png)
-> 📸 **Image Placeholder 10:** *Chèn hình ảnh Ma trận Phân quyền RBAC (Role-Based Access Control Matrix).*
-
 ---
 
 ## 5. C# WinForms Application & Workflow Validation
@@ -194,7 +193,7 @@ The application connects to SQL Server via ADO.NET and implements 5 role-based u
 
 ![C# WinForms Application UI](./docs/images/07-csharp-winforms-ui.png)
 > 📸 **Image Placeholder 07:** *Chèn hình ảnh Giao diện Ứng dụng C# WinForms (Form Điều phối & Xử lý sự cố).*
-
+**Explore Source Code:** [View Visual Studio Solution (.sln)](./03-Software-Application/)
 ---
 
 ## 6. Repository Layout & Artifacts
