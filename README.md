@@ -1,7 +1,7 @@
-#  HIVE Logistics Management System
+<img width="1502" height="488" alt="image" src="https://github.com/user-attachments/assets/e408437f-3c63-4867-bf03-4cd579dbe18e" />#  HIVE Logistics Management System
 **Academic Business Analysis & System Design Case Study**
 
-**Executive Report:** [Read Full Project Report (PDF)](./Project_Report.pdf) 
+**Executive Report:** [Read Full Project Report (PDF)](./Project_Report.pdf) |
 **App Source Code:** [View C# Solution](./Application/)
 >
 > **Academic Institution:** University of Finance - Marketing (UFM), Ho Chi Minh City  
