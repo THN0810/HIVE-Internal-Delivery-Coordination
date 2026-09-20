@@ -69,7 +69,7 @@ The TO-BE Process digitizes the core delivery lifecycle into a streamlined workf
 
 ### 3.2 System Requirements Specification (BRD)
 
-** Functional Requirements (25 Core FRs)**
+**Functional Requirements (25 Core FRs)**
 The 25 functional requirements are structured into 5 core operational modules:
 1.  **Order Intake & Lifecycle Tracking (FR-01 to FR-05):** Centralized order creation, unique tracking code generation (`DVCxxx`), multi-criteria filtering, and lifecycle state transitions (New ➔ Dispatching ➔ Assigned ➔ In-Transit ➔ Completed ➔ Cancelled).
 2.  **Resource Dispatching & Schedule Validation (FR-06 to FR-10):** Real-time monitoring of driver licenses and vehicle tonnage capacities, system-assisted resource filtering, and dispatch order generation (`LDPxxx`).
@@ -77,7 +77,7 @@ The 25 functional requirements are structured into 5 core operational modules:
 4.  **Billing, Invoicing & Financial Settlement (FR-16 to FR-20):** Payment receipt logging (`PTTxxx`), bank transaction code tracking, automated VAT invoice calculation (`HDxxx`), and unpaid account tracking.
 5.  **Role-Based Security & Executive Reporting (FR-21 to FR-25):** Granular RBAC permission mapping, user account lifecycle management, printable document exports (PDF/CSV), and real-time executive dashboard analytics.
 
-** Key Non-Functional Requirements (18 NFRs)**
+**Key Non-Functional Requirements (18 NFRs)**
 *   **Performance:** Query response time $\le$ 2–5 seconds for standard operations.
 *   **Concurrency:** Multi-user support with isolated transaction sessions.
 *   **Security & RBAC:** Passphrase-encrypted credentials and role-based menu restrictions.
