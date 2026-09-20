@@ -57,11 +57,11 @@ The TO-BE Process digitizes the core delivery lifecycle into a streamlined workf
 
 | Step | Workflow Stage | Responsible Role | Key Operations & System Outputs |
 | :--- | :--- | :--- | :--- |
-| 1 | **Order Intake & Validation** | Dispatcher (Điều phối) | Inputs order details; system validates addresses/cargo and generates a unique tracking ID (`DVCxxx`). |
-| 2 | **Resource Dispatching** | Dispatcher (Điều phối) | Filters available drivers & vehicles; system checks for schedule conflicts via T-SQL triggers before issuing dispatch orders (`LDPxxx`). |
-| 3 | **Delivery Execution** | Driver (Tài xế) | Receives trip assignment via "My Tasks" UI, accepts/rejects, logs real-time milestone timestamps, and records transit incidents. |
-| 4 | **Financial Settlement** | Accountant (Kế toán) | Records payment receipts (`PTTxxx`), validates bank transaction codes, and generates VAT invoices (`HDxxx`). |
-| 5 | **Executive Oversight** | Manager (Quản lý) | Monitors real-time management dashboard for revenue trends, order completion rates, and fleet utilization. |
+| 1 | **Order Intake & Validation** | Dispatcher | Inputs order details; system validates addresses/cargo and generates a unique tracking ID (`DVCxxx`). |
+| 2 | **Resource Dispatching** | Dispatcher | Filters available drivers & vehicles; system checks for schedule conflicts via T-SQL triggers before issuing dispatch orders (`LDPxxx`). |
+| 3 | **Delivery Execution** | Driver | Receives trip assignment via "My Tasks" UI, accepts/rejects, logs real-time milestone timestamps, and records transit incidents. |
+| 4 | **Financial Settlement** | Accountant | Records payment receipts (`PTTxxx`), validates bank transaction codes, and generates VAT invoices (`HDxxx`). |
+| 5 | **Executive Oversight** | Manager | Monitors real-time management dashboard for revenue trends, order completion rates, and fleet utilization. |
 
 ![TO-BE Process Model](Business_Analysis/BPMN_TOBE/BPMN_ToBe_Workflow.png)
 
@@ -197,7 +197,8 @@ The application connects to SQL Server via ADO.NET and implements 5 role-based u
 ![Dispatcher Workspace](images/dispatcher_workspace.png)
 Dispatcher Workspace for transport coordination and schedule conflict validation.
 > 
-**Explore Source Code:** [View Visual Studio Solution (.sln)](Application)
+**Explore Source Code:** [Access C# .NET Application Files](Application)
+> 
 ---
 
 ## 6. Repository Layout & Artifacts
@@ -206,9 +207,9 @@ Dispatcher Workspace for transport coordination and schedule conflict validation
 | :--- | :--- | :--- |
 | `/README.md` | **Master Documentation** | Project overview, BA contributions, workflow specifications & database architecture |
 | `/Project_Report.pdf` | **Academic Report** | Full academic business analysis and system design case study report |
-| `/01-Business-Analysis/` | **BA Requirements** | BPMN process models, 2-level DFDs (Context Level & Level 0), BFD, UML Use Cases |
-| `/02-Database-Design/` | **SQL Database** | Physical ERD diagram + Master T-SQL script (`QuanLyDieuPhoiVanChuyen_HIVE.sql`) |
-| `/03-Software-Application/` | **C# Application** | Visual Studio Solution (`.sln`), C# WinForms UI forms, and ADO.NET data layer |
+| `/Business-Analysis/` | **BA Requirements** | BPMN process models, 2-level DFDs (Context Level & Level 0), BFD, UML Use Cases |
+| `/Database-Design/` | **SQL Database** | Physical ERD diagram + Master T-SQL script (`QuanLyDieuPhoiVanChuyen_HIVE.sql`) |
+| `/Software-Application/` | **C# Application** | Visual Studio Solution (`.sln`), C# WinForms UI forms, and ADO.NET data layer |
 
 ---
 
