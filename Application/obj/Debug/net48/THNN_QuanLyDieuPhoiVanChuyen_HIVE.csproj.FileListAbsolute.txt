@@ -1,0 +1,98 @@
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Build2\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe.config
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Build2\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Build2\THNN_QuanLyDieuPhoiVanChuyen_HIVE.pdb
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Build3\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe.config
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Build3\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Build3\THNN_QuanLyDieuPhoiVanChuyen_HIVE.pdb
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\Select.Html.dep
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\Resources\logo_hive.png
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe.config
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.pdb
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\Newtonsoft.Json.dll
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\Select.HtmlToPdf.dll
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.csproj.AssemblyReference.cache
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.BaoCao.FrmBaoCao.resources
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.DieuPhoi.FrmDieuPhoi.resources
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.DonVanChuyen.FrmDonVanChuyen.resources
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.HoaDon.FrmChiTietHoaDon.resources
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.KhachHang.FrmKhachHang.resources
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.NguonLuc.FrmTaiXe.resources
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.QuanTri.FrmTaiKhoan.resources
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.TaiXeNhiemVu.FrmNhiemVuTaiXe.resources
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.csproj.GenerateResource.cache
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.csproj.CoreCompileInputs.cache
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_Qua.3AA198F7.Up2Date
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.pdb
+C:\Users\hoang\Music\THNN\THNN\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\EPPlus.dll
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\Select.Html.dep
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\Resources\logo_hive.png
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe.config
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.pdb
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\EPPlus.dll
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\Newtonsoft.Json.dll
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\Select.HtmlToPdf.dll
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.csproj.AssemblyReference.cache
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.BaoCao.FrmBaoCao.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.DieuPhoi.FrmDieuPhoi.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.DonVanChuyen.FrmDonVanChuyen.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.HoaDon.FrmChiTietHoaDon.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.KhachHang.FrmKhachHang.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.NguonLuc.FrmTaiXe.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.QuanTri.FrmTaiKhoan.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.TaiXeNhiemVu.FrmNhiemVuTaiXe.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.csproj.GenerateResource.cache
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.csproj.CoreCompileInputs.cache
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_Qua.3AA198F7.Up2Date
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Code chương trình\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.pdb
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\Select.Html.dep
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\Resources\logo_hive.png
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe.config
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.pdb
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\EPPlus.dll
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\Newtonsoft.Json.dll
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\bin\Debug\net48\Select.HtmlToPdf.dll
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.csproj.AssemblyReference.cache
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.BaoCao.FrmBaoCao.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.DieuPhoi.FrmDieuPhoi.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.DonVanChuyen.FrmDonVanChuyen.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.HoaDon.FrmChiTietHoaDon.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.KhachHang.FrmKhachHang.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.NguonLuc.FrmTaiXe.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.QuanTri.FrmTaiKhoan.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.TaiXeNhiemVu.FrmNhiemVuTaiXe.resources
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.csproj.GenerateResource.cache
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.csproj.CoreCompileInputs.cache
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_Qua.3AA198F7.Up2Date
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe
+C:\Users\hoang\Music\THNN\2321004034_TrinhHoangNgan_THNN\Source Code\THNN_QuanLyDieuPhoiVanChuyen_HIVE\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.pdb
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\bin\Debug\net48\Select.Html.dep
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\bin\Debug\net48\Resources\logo_hive.png
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\bin\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe.config
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\bin\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\bin\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.pdb
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\bin\Debug\net48\EPPlus.dll
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\bin\Debug\net48\Newtonsoft.Json.dll
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\bin\Debug\net48\Select.HtmlToPdf.dll
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.csproj.AssemblyReference.cache
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.BaoCao.FrmBaoCao.resources
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.DieuPhoi.FrmDieuPhoi.resources
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.DonVanChuyen.FrmDonVanChuyen.resources
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.HoaDon.FrmChiTietHoaDon.resources
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.KhachHang.FrmKhachHang.resources
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.NguonLuc.FrmTaiXe.resources
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.QuanTri.FrmTaiKhoan.resources
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.Forms.TaiXeNhiemVu.FrmNhiemVuTaiXe.resources
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.csproj.GenerateResource.cache
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.csproj.CoreCompileInputs.cache
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\obj\Debug\net48\THNN_Qua.3AA198F7.Up2Date
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.exe
+C:\Users\hoang\Videos\HIVE_GITHUB\Application\obj\Debug\net48\THNN_QuanLyDieuPhoiVanChuyen_HIVE.pdb
