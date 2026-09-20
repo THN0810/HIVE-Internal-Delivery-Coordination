@@ -97,13 +97,11 @@ To transform raw requirements into a structured system architecture, standard mo
 **2. Data Flow Diagrams (DFD)**
 > **BA Modeling Objective:** Applied **2-level DFDs** to establish clear system boundaries and map data flows between external entities, core business processes, and central data stores across departments.
 *   **Context Level DFD:** Defines system boundaries between the central platform and external actors (Customer, Management).
-*   **Level 0 DFD:** Decomposes into 5 core processes interacting with 4 data stores (`D1: Master Data`, `D2: Orders & Dispatch`, `D3: Payments & Invoices`, `D4: Security & Accounts`).
-
 ![DFD Context Level Diagram](Business_Analysis/DFD/DFD_Context_Level.png)
-Level 0 Data Flow Diagram illustrating 5 core processes.
-
+*   **Level 0 DFD:** Decomposes into 5 core processes interacting with 4 data stores (`D1: Master Data`, `D2: Orders & Dispatch`, `D3: Payments & Invoices`, `D4: Security & Accounts`).
 ![DFD Level 0 Diagram](Business_Analysis/DFD/DFD_Level_0.png)
 > **Deep Dive into BPMN & BRD & DFD:** [Download BA Master Workspace (.drawio)](Business_Analysis/BPMN+BFD+DFD.drawio)
+> 
 **3. UML Use Case Architecture**
 > **BA Modeling Objective:** Applied UML Use Case modeling to specify **detailed functional interactions** across 5 user roles (**Dispatcher**, **Driver**, **Accountant**, **Manager**, **Admin**) and 1 automated system actor (**System Handler**), encompassing **56 Use Cases** (`UC001` to `UC056`).
 > 
