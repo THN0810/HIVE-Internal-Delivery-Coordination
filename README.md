@@ -36,7 +36,7 @@ This academic case study delivers a comprehensive, end-to-end Business Analysis 
 *   **Database Engineering & Business Rule Enforcement:** Implementing a structured relational database (`QuanLyDieuPhoiVanChuyen_HIVE`) with automated T-SQL triggers to enforce business constraints and Role-Based Access Control (RBAC).
 *   **Application Validation:** Developing a functional C# WinForms desktop application connected to SQL Server to validate the feasibility and logical flow of end-to-end operational workflows and Use Cases across 5 user roles.
 
-![High-level System Architecture](Business_Analysis/hive_system_architecture.png)
+![High-level System Architecture](images/hive_system_architecture.png)
 
 ---
 
@@ -100,7 +100,7 @@ To transform raw requirements into a structured system architecture, standard mo
 ![DFD Context Level Diagram](Business_Analysis/DFD/DFD_Context_Level.png)
 *   **Level 0 DFD:** Decomposes into 5 core processes interacting with 4 data stores (`D1: Master Data`, `D2: Orders & Dispatch`, `D3: Payments & Invoices`, `D4: Security & Accounts`).
 ![DFD Level 0 Diagram](Business_Analysis/DFD/DFD_Level_0.png)
-> **Deep Dive into BPMN & BRD & DFD:** [Download BA Master Workspace (.drawio)](Business_Analysis/BPMN+BFD+DFD.drawio)
+> **Deep Dive into BPMN & BRD & DFD:** [Access Draw.io Source File](Business_Analysis/BPMN+BFD+DFD.drawio)
 > 
 **3. UML Use Case Architecture**
 > **BA Modeling Objective:** Applied UML Use Case modeling to specify **detailed functional interactions** across 5 user roles (**Dispatcher**, **Driver**, **Accountant**, **Manager**, **Admin**) and 1 automated system actor (**System Handler**), encompassing **56 Use Cases** (`UC001` to `UC056`).
@@ -116,8 +116,10 @@ To transform raw requirements into a structured system architecture, standard mo
 
 ![UML Use Case Model](Business_Analysis/Usecase/00_Overall_System_UseCase.png)
 
-**Read Specifications:** [View 56 Use Case Specifications (Project Report)](./Project_Report.pdf) 
-[View Enterprise Architect File (.eapx)](./Business_Analysis/Usecase/Usecase.eapx)
+**[View Core Use Case Specifications Document (PDF)](Project_Report.pdf):** Detailed step-by-step documentation covering basic flows, alternate paths, exception flows, and preconditions for the 9 high-priority Use Cases
+
+**[Enterprise Architect File (.eapx)](./Business_Analysis/Usecase/Usecase.eapx)** – The original UML source workspace for structural inspection.
+
 ---
 
 ### 3.4 Business Rules & Schedule Integrity Constraints
@@ -189,9 +191,13 @@ The application connects to SQL Server via ADO.NET and implements 5 role-based u
 *   **Executive Dashboard:** Validates real-time summary cards, revenue trend charts, and fleet utilization reporting for management decision-making.
 *   **Admin Security Center:** Validates user account provisioning and granular RBAC permission matrix enforcement (`Q001`–`Q067`).
 
-![C# WinForms Application UI](./docs/images/07-csharp-winforms-ui.png)
-> 📸 **Image Placeholder 07:** *Chèn hình ảnh Giao diện Ứng dụng C# WinForms (Form Điều phối & Xử lý sự cố).*
-**Explore Source Code:** [View Visual Studio Solution (.sln)](./03-Software-Application/)
+![System Login Interface](images/hive_login_interface.png)
+> System Login Interface with RBAC credential verification.
+> 
+![Dispatcher Workspace](images/dispatcher_workspace.png)
+Dispatcher Workspace for transport coordination and schedule conflict validation.
+> 
+**Explore Source Code:** [View Visual Studio Solution (.sln)](Application)
 ---
 
 ## 6. Repository Layout & Artifacts
