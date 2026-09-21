@@ -41,7 +41,7 @@ This academic case study delivers a comprehensive, end-to-end Business Analysis 
 
 ---
 
-##  2. My Contribution
+##  2. Key Project Outcomes
 
 | Core Domain | Key Contributions & Delivered Artifacts |
 | :--- | :--- |
