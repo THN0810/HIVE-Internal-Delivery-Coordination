@@ -212,6 +212,10 @@ Dispatcher Workspace for transport coordination and schedule conflict validation
 | `/Database-Design/` | **SQL Database** | Physical ERD diagram + Master T-SQL script (`QuanLyDieuPhoiVanChuyen_HIVE.sql`) |
 | `/Software-Application/` | **C# Application** | Visual Studio Solution (`.sln`), C# WinForms UI forms, and ADO.NET data layer |
 
+##  AI-Assisted Development
+
+AI tools were used as supporting tools during parts of the implementation, particularly for SQL development, C# WinForms coding assistance, debugging, and documentation refinement. The business analysis, process models, system structure, database design, and final project outputs were reviewed and adapted by the author.
+
 ---
 
 ##  7. Future Roadmap & Potential Enhancements
